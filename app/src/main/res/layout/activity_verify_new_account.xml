@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".VerifyNewAccount">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:text="Enter the code that we sent to"/>
+            <TextView
+                android:id="@+id/verification_phone_nc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:text="01763334100"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:layout_marginTop="30sp"
+                android:text="We have sent you an SMS with your 6-digit verification code.Enter this code to reset your password."/>
+            <EditText
+                android:id="@+id/verifi_text_nc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginTop="25dp"
+                android:inputType="number"
+                android:hint="Enter Code"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/cnt_nc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Continue"
+                android:textStyle="bold"
+                android:onClick="verifyToContinueNewAccount"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Haven't received the SMS message?"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"/>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="30sp"
+                android:layout_margin="10dp"
+                android:onClick="sendVeficationCodeNewAccount"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:drawablePadding="5dp"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_send_black_24dp"
+                    android:textSize="20dp"
+                    android:text="Send SMS Again"/>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

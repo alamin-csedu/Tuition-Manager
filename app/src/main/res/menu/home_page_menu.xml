@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="ifRoom"
+        android:title="Search" />
+    <item
+        android:id="@+id/action_filter"
+        android:icon="@drawable/ic_filter_list_black_24dp"
+        app:showAsAction="ifRoom"
+        android:title="filter by">
+        <menu>
+            <item
+                android:title="Tutor Wanted"
+                android:id="@+id/submenu_tuition"/>
+            <item
+                android:title="Tuition Wanted"
+                android:id="@+id/submenu_tutor"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/ic_arrow_back_black_24dp"
+        app:showAsAction="ifRoom"
+        android:title="Logout" />
+    <item
+        android:id="@+id/action_change_password"
+        android:title="Change Password" />
+    <item
+        android:id="@+id/action_credits"
+        android:title="Credits" />
+    <item
+        android:id="@+id/action_rating"
+        android:title="Send us Feedback" />
+
+</menu>
